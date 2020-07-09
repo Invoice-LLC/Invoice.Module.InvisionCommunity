@@ -2,7 +2,7 @@
 
 <h3>Установка</h3>
 
-1. Скачайте [плагин](), затем распакуйте его в корневую директорию сайта
+1. Скачайте [плагин](https://github.com/Invoice-LLC/Invoice.Module.InvisionCommunity/archive/master.zip), затем распакуйте его в корневую директорию сайта
 2. Перейдите в папку **%папка сайта%\applications\nexus\sources\Gateway** и отредактируйте в файле Gateway.php функцию **gateways()**
 следующим образом:
 ```php
