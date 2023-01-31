@@ -1,5 +1,7 @@
 <?php
+
 namespace IPS\nexus\Gateway;
+
 class RestClient
 {
     public $url = "https://api.invoice.su/api/v2/";
@@ -34,14 +36,14 @@ class RestClient
         curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            "Host: pay.invoice.su",
+            "Host: api.invoice.su",
             "content-type: application/json",
-            "Authorization: Basic ".$auth,
-            "User-Agent: curl/7.55.1",
+            "Authorization: Basic " . $auth,
+            "User-Agent: Invoice.InvisionCommunity",
             "Accept: */*"
         ]);
 
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $response = curl_exec($ch);
         curl_close($ch);

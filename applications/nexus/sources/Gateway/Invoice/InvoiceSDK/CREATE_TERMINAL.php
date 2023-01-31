@@ -1,6 +1,7 @@
 <?php
 
 namespace IPS\nexus\Gateway;
+
 class CREATE_TERMINAL
 {
     /**
@@ -27,13 +28,4 @@ class CREATE_TERMINAL
      * @var boolean
      */
     public $canComments;
-
-    /**
-     * CREATE_TERMINAL constructor.
-     * @param $name string
-     */
-    public function __construct($name)
-    {
-        $this->name = $name;
-    }
 }

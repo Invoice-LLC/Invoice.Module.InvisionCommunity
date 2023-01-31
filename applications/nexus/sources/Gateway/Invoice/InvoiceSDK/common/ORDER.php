@@ -1,4 +1,5 @@
 <?php
+
 namespace IPS\nexus\Gateway;
 
 class INVOICE_ORDER
@@ -19,13 +20,4 @@ class INVOICE_ORDER
      * @var string
      */
     public $id;
-
-    /**
-     * ORDER constructor
-     * @param $amount
-     */
-    public function __construct($amount)
-    {
-        $this->amount = $amount;
-    }
 }
